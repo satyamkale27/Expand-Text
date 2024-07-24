@@ -1,3 +1,5 @@
+import "./index.css";
+
 export default function App() {
   return (
     <div>
@@ -32,6 +34,14 @@ export default function App() {
   );
 }
 
-function TextExpander({ children }) {
-  return <div>{children}</div>;
+function TextExpander({
+  collapsedNumWords,
+  expandButtonText,
+  collapseButtonText,
+  buttonColor,
+  expanded,
+  className,
+  children,
+}) {
+  return <div className={className}>{children}</div>;
 }
