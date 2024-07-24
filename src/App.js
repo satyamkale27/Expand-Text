@@ -39,7 +39,7 @@ function TextExpander({
   collapsedNumWords = 10,
   expandButtonText = "show more",
   collapseButtonText = "show less",
-  buttonColor,
+  buttonColor = "#1f09cd",
   expanded = false,
   className,
   children,
