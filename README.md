@@ -1,5 +1,3 @@
-built a reusable and customisable component
-
 # Project Title
 
 ## Overview
