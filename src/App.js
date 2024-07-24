@@ -46,10 +46,15 @@ function TextExpander({
 }) {
   const [isexpanded, setIsExpanded] = useState(expanded);
   const displayText = isexpanded ? children : "test";
+  function handelsetIsExpanded() {
+    setIsExpanded((curr) => !curr);
+  }
   return (
     <div className={className}>
       <span>{displayText}</span>
-      <button>{isexpanded ? collapseButtonText : expandButtonText}</button>
+      <button onClick={handelsetIsExpanded}>
+        {isexpanded ? collapseButtonText : expandButtonText}
+      </button>
     </div>
   );
 }
